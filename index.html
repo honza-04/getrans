@@ -3,12 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GETRANS, s.r.o. — Spolehlivý partner pro dopravu a čerpání betonu</title>
-    <meta name="description" content="GETRANS, s.r.o. — doprava betonu, čerpání betonu, dodávka betonu a pronájem movitého majetku. Spolehlivý partner pro vaši stavbu.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Doprava a čerpání betonu Kolín, Praha-východ | GETRANS s.r.o.</title>
+    <meta name="description" content="GETRANS s.r.o. z Přišimas (okres Kolín) — doprava betonu, čerpání betonu, dodávka betonu a pronájem movitých věcí. Volejte +420 724 748 109.">
+    <link rel="canonical" href="https://www.getrans.cz/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a3a6b">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="GETRANS s.r.o.">
+    <meta property="og:url" content="https://www.getrans.cz/">
+    <meta property="og:title" content="GETRANS s.r.o. — doprava a čerpání betonu">
+    <meta property="og:description" content="Doprava, čerpání a dodávka betonu. Přišimasy, okres Kolín. Tel. +420 724 748 109.">
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.getrans.cz/#firma",
+        "name": "GETRANS s.r.o.",
+        "url": "https://www.getrans.cz/",
+        "telephone": "+420724748109",
+        "email": "info@getrans.cz",
+        "taxID": "CZ25034529",
+        "vatID": "CZ25034529",
+        "identifier": {"@type": "PropertyValue", "propertyID": "IČO", "value": "25034529"},
+        "foundingDate": "1998-03-20",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jana Čermáka 165",
+            "addressLocality": "Přišimasy",
+            "postalCode": "282 01",
+            "addressRegion": "Středočeský kraj",
+            "addressCountry": "CZ"
+        },
+        "areaServed": {"@type": "Country", "name": "Česká republika"},
+        "knowsAbout": ["Doprava betonu", "Čerpání betonu", "Dodávka betonu", "Pronájem movitých věcí"]
+    }
+    </script>
     <style>
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400 800;
+            font-display: swap;
+            src: url(/fonts/inter-latin-ext.woff2) format('woff2');
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400 800;
+            font-display: swap;
+            src: url(/fonts/inter-latin.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
         :root {
             --bg: #f0f2f5;
             --bg-elev: #e4e8ed;
@@ -411,7 +462,7 @@
             height: 26px;
         }
 
-        .contact-card h4 {
+        .contact-card h3 {
             font-size: 14px;
             color: var(--text-muted);
             font-weight: 500;
@@ -492,7 +543,7 @@
             max-width: 320px;
         }
 
-        .footer-col h5 {
+        .footer-col h2 {
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -525,6 +576,11 @@
             text-align: center;
             color: var(--text-muted);
             font-size: 14px;
+        }
+
+        .footer-legal {
+            margin-top: 8px;
+            font-size: 13px;
         }
 
         /* Mobile */
@@ -579,22 +635,23 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">GE<span>TRANS</span></a>
+                <a href="/" class="logo" aria-label="GETRANS – úvod">GE<span>TRANS</span></a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#sluzby">Služby</a></li>
                     <li><a href="#o-nas">O nás</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
                 <a href="#kontakt" class="nav-cta">Nezávazná poptávka</a>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">☰</button>
             </nav>
         </div>
     </header>
 
+    <main>
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="hero-badge">GETRANS, s.r.o.</span>
+                <span class="hero-badge">GETRANS s.r.o.</span>
                 <h1>Jsme <span class="accent">spolehlivý</span> partner pro vaši stavbu</h1>
                 <p>Doprava, čerpání a dodávka betonu po celé České republice. Profesionální služby a moderní technika pro malé i velké stavební projekty.</p>
                 <div class="hero-cta">
@@ -654,7 +711,7 @@
                 <div class="about-text">
                     <div class="section-tag">O nás</div>
                     <h2>Roky zkušeností ve stavebním odvětví</h2>
-                    <p>GETRANS, s.r.o. je spolehlivá česká firma, která se specializuje na komplexní služby v oblasti dopravy a čerpání betonu. Klademe důraz na kvalitu, přesnost a dodržování termínů.</p>
+                    <p>GETRANS s.r.o. je spolehlivá česká firma, která se specializuje na komplexní služby v oblasti dopravy a čerpání betonu. Klademe důraz na kvalitu, přesnost a dodržování termínů.</p>
                     <p>Naším cílem je být dlouhodobým partnerem našich zákazníků a poskytovat jim služby, na které se mohou kdykoli spolehnout. Disponujeme moderní technikou a zkušeným týmem profesionálů.</p>
                 </div>
                 <div class="stats">
@@ -691,22 +748,22 @@
                     <div class="contact-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     </div>
-                    <h4>Telefon</h4>
+                    <h3>Telefon</h3>
                     <a href="tel:+420724748109">+420 724 748 109</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </div>
-                    <h4>Email</h4>
+                    <h3>E-mail</h3>
                     <a href="mailto:info@getrans.cz">info@getrans.cz</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <h4>Adresa</h4>
-                    <p>Jana Čermáka 165<br>282 01 Přišimasy</p>
+                    <h3>Adresa</h3>
+                    <p><a href="https://mapy.cz/zakladni?q=Jana%20%C4%8Cerm%C3%A1ka%20165%2C%20P%C5%99i%C5%A1imasy" target="_blank" rel="noopener">Jana Čermáka 165<br>282 01 Přišimasy</a></p>
                 </div>
             </div>
 
@@ -717,16 +774,17 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">GE<span>TRANS</span></a>
+                    <a href="/" class="logo" aria-label="GETRANS – úvod">GE<span>TRANS</span></a>
                     <p>Spolehlivý partner pro dopravu, čerpání a dodávku betonu po celé České republice.</p>
                 </div>
                 <div class="footer-col">
-                    <h5>Služby</h5>
+                    <h2>Služby</h2>
                     <ul>
                         <li><a href="#sluzby">Doprava betonu</a></li>
                         <li><a href="#sluzby">Čerpání betonu</a></li>
@@ -735,7 +793,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h5>Kontakt</h5>
+                    <h2>Kontakt</h2>
                     <ul>
                         <li><a href="tel:+420724748109">+420 724 748 109</a></li>
                         <li><a href="mailto:info@getrans.cz">info@getrans.cz</a></li>
@@ -744,7 +802,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © 2026 GETRANS, s.r.o. — Všechna práva vyhrazena.
+                © 2026 GETRANS s.r.o. — Všechna práva vyhrazena.
+                <p class="footer-legal">GETRANS s.r.o., Jana Čermáka 165, 282 01 Přišimasy · IČO 25034529 · DIČ CZ25034529 · zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 357772</p>
             </div>
         </div>
     </footer>
@@ -752,9 +811,15 @@
     <script>
         const toggle = document.getElementById('mobileToggle');
         const navLinks = document.getElementById('navLinks');
-        toggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        toggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', open);
+        });
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('active'));
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
         });
     </script>
 </body>
